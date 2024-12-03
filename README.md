@@ -1,4 +1,4 @@
-## AI-for-Radiation-Shielding-Composites-Materials-design
+## AI-for-Radiation-Shielding-Composites-Materials-Design
 
 This project involves loading, cleaning, and preprocessing data, training a machine learning model, and evaluating its performance. The project uses PyTorch for training the model and leverages a custom DataHandler` for loading and preprocessing the dataset. The process also includes seed initialization for reproducibility and visualization of the training results.
 
@@ -95,28 +95,6 @@ python main.py
 - **Visualization**: The `Visualizer` class generates plots to visualize the training loss and predictions.
 
 - **Saving the Output**: After training and evaluation, the model's predictions and other relevant data are saved to an Excel file in the `SAVE_PATH` directory.
-
-### 3. Example Output
-
-Once the script runs successfully, you'll see the following output:
-
-```
-Data loaded successfully.
-Data preprocessing completed.
-Training and evaluation completed successfully.
-Data saved to /path/to/save/output/output_file.xlsx
-```
-
-Additionally, you will see visualizations of the training and validation losses and a plot of the actual vs predicted values.
-
-## Error Handling
-
-The project includes error handling to ensure the program runs smoothly:
-
-- **FileNotFoundError**: Raised when the data file cannot be found at the specified path.
-- **ValueError**: Raised for any mismatched dimensions in the dataset.
-- **General Exception Handling**: Any unexpected errors are caught and displayed with a relevant message.
-
 ## Classes and Functions
 
 ### `DataHandler` (data_processing/data_loader.py)
