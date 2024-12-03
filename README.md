@@ -1,11 +1,10 @@
-```markdown
+
  AI-for-Radiation-Shielding-Composites-Materials-design
 
-This project involves loading, cleaning, and preprocessing data, training a machine learning model, and evaluating its performance. The project uses PyTorch for training the model and leverages a custom `DataHandler` for loading and preprocessing the dataset. The process also includes seed initialization for reproducibility and visualization of the training results.
+This project involves loading, cleaning, and preprocessing data, training a machine learning model, and evaluating its performance. The project uses PyTorch for training the model and leverages a custom DataHandler` for loading and preprocessing the dataset. The process also includes seed initialization for reproducibility and visualization of the training results.
 
-## Project Structure
+ Project Structure
 
-```
 .
 ├── data_processing/
 │   └── data_loader.py  # Contains the DataHandler class for data loading and preprocessing
@@ -16,7 +15,7 @@ This project involves loading, cleaning, and preprocessing data, training a mach
 ├── main.py             # Main script that ties everything together and runs the process
 ├── requirements.txt    # List of dependencies
 └── README.md           # This file
-```
+
 
 ## Requirements
 
