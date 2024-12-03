@@ -5,8 +5,8 @@ This project involves loading, cleaning, and preprocessing data, training a mach
 ![Alt text](result_plots/bestnn_loss_curve_excluding_first.png)
 
 <p align="center">
-  <img src="result_plots/nnpredicted_vs_actual_FNRC.png" alt="Image 1" width="350"/>
-  <img src="result_plots/xglinear_fit_plot.png" alt="Image 2" width="430"/>
+  <img src="result_plots/nnpredicted_vs_actual_FNRC.png" alt="Image 1" width="450"/>
+  <img src="result_plots/xglinear_fit_plot.png" alt="Image 2" width="520"/>
 <!--   <img src="result_plots/fflinear_fit_plot.png" alt="Image 3" width="500"/> -->
 </p>
 
