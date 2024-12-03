@@ -1,11 +1,11 @@
 ## AI-for-Radiation-Shielding-Composites-Materials-Design
 
-This project involves loading, cleaning, and preprocessing data, training a machine learning model, and evaluating its performance. The project uses PyTorch for training the model and leverages a custom DataHandler` for loading and preprocessing the dataset. The process also includes seed initialization for reproducibility and visualization of the training results.
+This project focuses on the simulation of composite materials to predict their FNRCS using machine learning. The workflow begins with data collection from simulations, followed by data cleaning and preprocessing using a custom DataHandler to ensure high-quality input for model training. Various machine learning models, including XGBoost, Random Forest, and Artificial Neural Networks (ANN), are employed, with PyTorch used for building and fine-tuning the ANN model. Performance of each model is evaluated using standard metrics to identify the most accurate predictor. The project concludes with the visualization of training outcomes and model performance, providing valuable insights into the predictive accuracy and reliability of the models for composite materials.
 
 ![Alt text](result_plots/bestnn_loss_curve_excluding_first.png)
 
 <p align="center">
-  <img src="result_plots/nnpredicted_vs_actual_FNRC.png" alt="Image 1" width="450"/>
+  <img src="result_plots/nnpredicted_vs_actual_FNRC.png" alt="Image 1" width="435"/>
   <img src="result_plots/xglinear_fit_plot.png" alt="Image 2" width="520"/>
 <!--   <img src="result_plots/fflinear_fit_plot.png" alt="Image 3" width="500"/> -->
 </p>
