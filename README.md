@@ -15,36 +15,22 @@ This project focuses on the simulation of composite materials to predict their F
 ## Project Structure
 
 ```
-├── data_processing/
-│   └── data_loader.py  # Contains the DataHandler class for data loading and preprocessing
-├── modeling/
-│   ├── trainer.py      # Contains the Trainer class for model training and evaluation
-│   ├── visualizer.py   # Contains Visualizer class for plotting loss and predictions
-│   └── model.py        # Defines the neural network model
-├── main.py             # Main script that ties everything together and runs the process
-├── requirements.txt    # List of dependencies
-└── README.md           # This file
+├── FNRCS/
+  ├── FNRCS_Data/
+  │   ├── clean_data/
+  │   │  └── clean_data.xlx 
+  │   ├── full_data_file/
+  │   │  └── data.xlx       # unprocesses excel data fiels 
+  │   └── data_cleaning.py  # data cleaning and preprocessing logic
+  ├── modeling/
+  │   ├── ann.py    # Defines the neural network model
+  │   └── ml.py     # XGBOOST and random forest models
+  ├── Simulation/
+  │   └── simulations.py 
+  ├── main.py             # Main script that ties everything together and runs the process
+  ├── requirements.txt    # List of dependencies
+  └── README.md          
 ```
-
-## Requirements
-
-To run this project, you'll need the following dependencies:
-
-- Python 3.7+
-- PyTorch
-- NumPy
-- pandas
-- matplotlib
-- scikit-learn
-- dotenv (for managing environment variables)
-- Kaggle (for dataset)
-
-You can install all required dependencies by running:
-
-```
-pip install -r requirements.txt
-```
-
 ## Setup Instructions
 
 ### 1. Clone the repository
