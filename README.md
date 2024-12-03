@@ -2,6 +2,9 @@
 
 This project involves loading, cleaning, and preprocessing data, training a machine learning model, and evaluating its performance. The project uses PyTorch for training the model and leverages a custom DataHandler` for loading and preprocessing the dataset. The process also includes seed initialization for reproducibility and visualization of the training results.
 
+![Alt text](relative/path/to/image)
+
+
 ## Project Structure
 
 ```
