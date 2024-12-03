@@ -1,40 +1,45 @@
 ## AI-for-Radiation-Shielding-Composites-Materials-Design
 
-This project involves loading, cleaning, and preprocessing data, training a machine learning model, and evaluating its performance. The project uses PyTorch for training the model and leverages a custom DataHandler` for loading and preprocessing the dataset. The process also includes seed initialization for reproducibility and visualization of the training results.
+This project focuses on the simulation of composite materials to predict their FNRCS using machine learning. The workflow begins with data collection from simulations, followed by data cleaning and preprocessing using a custom DataHandler to ensure high-quality input for model training. Various machine learning models, including XGBoost, Random Forest, and Artificial Neural Networks (ANN), are employed, with PyTorch used for building and fine-tuning the ANN model. Performance of each model is evaluated using standard metrics to identify the most accurate predictor. The project concludes with the visualization of training outcomes and model performance, providing valuable insights into the predictive accuracy and reliability of the models for composite materials.
+
+![Alt text](result_plots/bestnn_loss_curve_excluding_first.png)
+
+<p align="center">
+  <img src="result_plots/nnpredicted_vs_actual_FNRC.png" alt="Image 1" width="435"/>
+  <img src="result_plots/xglinear_fit_plot.png" alt="Image 2" width="520"/>
+<!--   <img src="result_plots/fflinear_fit_plot.png" alt="Image 3" width="500"/> -->
+</p>
+
+## Density Plots
+
+<p align="center">
+  <img src="result_plots/density1.png" alt="Image 1" width="435"/>
+  <img src="result_plots/density2.png" alt="Image 2" width="520"/>
+  <img src="result_plots/density3.png" alt="Image 3" width="500"/>
+  <img src="result_plots/density4.png" alt="Image 3" width="500"/>
+</p>
+
+
 
 ## Project Structure
 
 ```
-├── data_processing/
-│   └── data_loader.py  # Contains the DataHandler class for data loading and preprocessing
-├── modeling/
-│   ├── trainer.py      # Contains the Trainer class for model training and evaluation
-│   ├── visualizer.py   # Contains Visualizer class for plotting loss and predictions
-│   └── model.py        # Defines the neural network model
-├── main.py             # Main script that ties everything together and runs the process
-├── requirements.txt    # List of dependencies
-└── README.md           # This file
+├── FNRCS/
+  ├── FNRCS_Data/
+  │   ├── clean_data/
+  │   │  └── clean_data.xlx 
+  │   ├── full_data_file/
+  │   │  └── data.xlx       # unprocesses excel data fiels 
+  │   └── data_cleaning.py  # data cleaning and preprocessing logic
+  ├── modeling/
+  │   ├── ann.py    # Defines the neural network model
+  │   └── ml.py     # XGBOOST and random forest models
+  ├── Simulation/
+  │   └── simulations.py 
+  ├── main.py             # Main script that ties everything together and runs the process
+  ├── requirements.txt    # List of dependencies
+  └── README.md          
 ```
-
-## Requirements
-
-To run this project, you'll need the following dependencies:
-
-- Python 3.7+
-- PyTorch
-- NumPy
-- pandas
-- matplotlib
-- scikit-learn
-- dotenv (for managing environment variables)
-- Kaggle (for dataset)
-
-You can install all required dependencies by running:
-
-```
-pip install -r requirements.txt
-```
-
 ## Setup Instructions
 
 ### 1. Clone the repository
