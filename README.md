@@ -10,6 +10,15 @@ This project focuses on the simulation of composite materials to predict their F
 <!--   <img src="result_plots/fflinear_fit_plot.png" alt="Image 3" width="500"/> -->
 </p>
 
+## Density Plots
+
+<p align="center">
+  <img src="result_plots/density1.png" alt="Image 1" width="435"/>
+  <img src="result_plots/density2.png" alt="Image 2" width="520"/>
+  <img src="result_plots/density3.png" alt="Image 3" width="500"/>
+  <img src="result_plots/density4.png" alt="Image 3" width="500"/>
+</p>
+
 
 
 ## Project Structure
