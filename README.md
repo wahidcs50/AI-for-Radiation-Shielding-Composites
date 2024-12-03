@@ -4,7 +4,7 @@ This project involves loading, cleaning, and preprocessing data, training a mach
 
 ## Project Structure
 
-.
+```
 ├── data_processing/
 │   └── data_loader.py  # Contains the DataHandler class for data loading and preprocessing
 ├── modeling/
@@ -14,7 +14,7 @@ This project involves loading, cleaning, and preprocessing data, training a mach
 ├── main.py             # Main script that ties everything together and runs the process
 ├── requirements.txt    # List of dependencies
 └── README.md           # This file
-
+```
 
 ## Requirements
 
