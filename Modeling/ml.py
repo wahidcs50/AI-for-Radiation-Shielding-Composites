@@ -100,31 +100,4 @@ class Visualization:
         # plt.savefig('denisty1.png', dpi=600)
         plt.show()
 
-if __name__ == "__main__":
-    data_handler = DataHandler('/kaggle/input/second-clean-data.xlsx')
-    df = data_handler.load_data()
-    X_train, X_test, y_train, y_test = data_handler.preprocess_data()
-
-    trainer = ModelTrainer(X_train, y_train, X_test, y_test)
-
-    xgb_model = trainer.train_xgboost()
-    rf_model = trainer.train_random_forest()
-    
-    evaluator_xgb = ModelEvaluator(xgb_model, X_test, y_test)
-    y_pred_xgb = evaluator_xgb.evaluate()
-    evaluator_xgb.plot_shap_summary()
-
-    evaluator_rf = ModelEvaluator(rf_model, X_test, y_test)
-    y_pred_rf = evaluator_rf.evaluate()
-    evaluator_rf.plot_shap_summary()
-
-    X=df[['Density:', 'AMW:', 'C2H6OSi_fraction', 'CdO_fraction', 'B4C_fraction', 'Gd2O3_fraction']]
-    X_test_df = pd.DataFrame(X_test, columns=X.columns)
-    Visualization.plot_actual_vs_predicted(y_test, y_pred_xgb, 'XGBoost FNRCS Prediction vs Actual')
-    Visualization.plot_actual_vs_predicted(y_test, y_pred_rf, 'Random Forest FNRCS Prediction vs Actual')
-    for i in X[['C2H6OSi_fraction','CdO_fraction','B4C_fraction','Gd2O3_fraction']]:
-        x = X_test_df['Density:']
-        y = X_test_df[i]
-        z = y_pred_rf
-        Visualization.graph_ploting(x,y,z)
     
