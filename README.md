@@ -13,10 +13,10 @@ This project focuses on the simulation of composite materials to predict their F
 ## Density Plots
 
 <p align="center">
-  <img src="result_plots/denisty1.png" alt="Image 1" width="435"/>
-  <img src="result_plots/density2.png" alt="Image 2" width="520"/>
-  <img src="result_plots/denisty3.png" alt="Image 3" width="500"/>
-  <img src="result_plots/denisty4.png" alt="Image 3" width="500"/>
+  <img src="result_plots/denisty1.png" alt="Image 1" width="450"/>
+  <img src="result_plots/density2.png" alt="Image 2" width="450"/>
+  <img src="result_plots/denisty3.png" alt="Image 3" width="450"/>
+  <img src="result_plots/denisty4.png" alt="Image 3" width="450"/>
 </p>
 
 
